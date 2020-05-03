@@ -7,7 +7,7 @@ import './EmailOptinForm.css'
 class EmailOptinForm extends React.Component {
   static defaultProps = {
     name: 'Email Optin Form',
-    action: ''
+    action: '/construction'
   }
 
   state = {
