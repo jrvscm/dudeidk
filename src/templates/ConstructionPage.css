@@ -1,9 +1,10 @@
 .Construction {
-  height: 100vh;
-  background: url('/images/construction-background.png');
+  background-image: url('/images/construction-background.png');
   background-position: center;
   background-size: cover;
   position: relative;
+  background-color: #ffff00;
+  min-height: 100vh;
 }
 
 .social-link {

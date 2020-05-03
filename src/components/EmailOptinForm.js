@@ -7,12 +7,15 @@ import './EmailOptinForm.css'
 class EmailOptinForm extends React.Component {
   static defaultProps = {
     name: 'Email Optin Form',
-    action: ''
+    action: '',
+    successMessage: `Thanks for signing up! When we go live, we'll shoot you an email!`,
+    errorMessage: `Oops! Something went wrong. Try again in a few.`
   }
 
   state = {
     alert: '',
-    disabled: false
+    disabled: false,
+    formSuccess: false
   }
 
   handleSubmit = e => {
@@ -36,13 +39,17 @@ class EmailOptinForm extends React.Component {
         //HANDLE SUCCESS
         form.reset()
         this.setState({
-          disabled: false
+          formSuccess: true,
+          alert: this.props.successMessage,
+          disabled: true
         })
       })
       .catch(err => {
         //HANDLE ERROR
         console.error(err)
         this.setState({
+          formSuccess: false,
+          alert: this.props.errorMessage,
           disabled: false,
         })
       })
@@ -67,6 +74,7 @@ class EmailOptinForm extends React.Component {
               type="email"
               placeholder="Email"
               name="emailAddress"
+              disabled={this.state.disabled}
               required
             />
             <span>Email address</span>
@@ -76,9 +84,12 @@ class EmailOptinForm extends React.Component {
           <input
             className="Button Form--SubmitButton"
             type="submit"
-            value="Enquire"
+            value="Sign Up"
             disabled={this.state.disabled}
           />
+          {this.state.alert && (
+            <div className="Form--Alert">{this.state.alert}</div>
+          )}
         </form>
       </Fragment>
     )

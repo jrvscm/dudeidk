@@ -131,7 +131,7 @@
 }
 
 .EmailOptinForm .Form--Alert {
-  background: var(--lightGrey);
+  background: transparent;
   width: 100%;
   text-align: center;
   padding: 2rem;
