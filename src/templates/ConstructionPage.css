@@ -1,0 +1,19 @@
+.Construction {
+  height: 100vh;
+  background: url('/images/construction-background.png');
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.social-link {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  color: #000;
+  transition: all 250ms ease;
+}
+
+.social-link:hover {
+  opacity: .5;
+}
