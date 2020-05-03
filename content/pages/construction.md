@@ -1,6 +1,6 @@
 ---
 template: ConstructionPage
-slug: 'construction'
+slug: construction
 title: Dudeidk
 featuredImage: ''
 subtitle: ''
