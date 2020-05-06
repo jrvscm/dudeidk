@@ -2,11 +2,13 @@ import React from 'react'
 import { graphql } from 'gatsby'
 import { Instagram } from 'react-feather'
 
-import FullPageImage from '../components/FullPageImage'
+// import FullPageImage from '../components/FullPageImage'
+import svgLogo from '../../static/images/dudeidklogo.svg'
 import EmailOptinForm from '../components/EmailOptinForm'
 import './ConstructionPage.css'
 
-// Export Template for use in CMS preview
+// Export Template for use in CMS previews
+
 export const ConstructionPageTemplate = () => (
   <main className="Construction">
     
@@ -14,12 +16,30 @@ export const ConstructionPageTemplate = () => (
       <Instagram size={36} />
     </a>
 
-    <section className="section">
-      <div className="container">
-        <FullPageImage />
+    <div className="gradient">
+      <div className="inner-col">
+        <img src={svgLogo} />
+      </div>
+      <div className="inner-col">
+        <h1>Coming Soon</h1>
+        <hr />
+        <p>Creative Digital Marketing</p>
+        <hr />
+        <h2>Get notified when we go live</h2>
         <EmailOptinForm />
       </div>
-    </section>
+    </div>
+
+    <video 
+      id="video"
+      src="https://ucarecdn.com/89220c18-2635-4c99-b487-2c836a14edc0/video.mp4" 
+      className="video-background" 
+      no-controls="true"
+      autoPlay
+      muted
+      loop
+      type="video/mp4">
+    </video>
 
   </main>
 )

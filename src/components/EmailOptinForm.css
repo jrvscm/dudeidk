@@ -1,9 +1,9 @@
 .EmailOptinForm {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: flex-end;
   justify-content: flex-start;
-  max-width: 450px;
+  width: 400px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -40,15 +40,18 @@
 }
 
 .EmailOptinForm .Form--Input {
-  font-family: inherit;
+  font-family: 'Lato', sans-serif;
   flex-grow: 1;
   box-sizing: border-box;
   display: block;
   margin: 0;
   border: none;
-  border-bottom: 3px solid #000;
+  border: 1px solid #fff;
   padding: 1.5rem 2rem;
-  border-radius: 0px;
+  border-top-left-radius: var(--borderRadius);
+  border-bottom-left-radius: var(--borderRadius);
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
   line-height: 1.25em;
   transition: border-color 0.2s;
   resize: none;
@@ -56,6 +59,7 @@
   transition: 0.3s ease all;
   background: transparent;
   border-right: 0px;
+  color: #fff;
 }
 
 .EmailOptinForm .EmailOptinForm .Form--InputText:valid,
@@ -104,12 +108,7 @@
 
 .EmailOptinForm .Form--Input:focus {
   outline: none;
-  border-color: #000;
-}
-
-.EmailOptinForm .Form--Input:focus {
-  outline: none;
-  border-color: #000;
+  border-color: #fff;
 }
 
 .EmailOptinForm .Form--Input[disabled],
@@ -121,9 +120,26 @@
 
 .EmailOptinForm .Form--SubmitButton {
   min-height: 52px;
-  border-radius: var(--borderRadius);
-  background: RGBA(0,0,0,.85);
+  border-top-right-radius: var(--borderRadius);
+  border-bottom-right-radius: var(--borderRadius);
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  background:  linear-gradient(to left,
+  rgba(52, 138, 199,  .55),
+  rgba(116, 116, 191, .55)
+  );
   margin-top: 1rem;
+  color: #fff;
+  border: 1px solid #fff;
+  font-family: 'Lato', sans-serif;
+}
+
+.EmailOptinForm .Form--SubmitButton:hover {
+  background:  linear-gradient(to left,
+  rgba(52, 138, 199,  .8),
+  rgba(116, 116, 191, .8)
+  );
+  color: rgba(255,255,255,.8)
 }
 
 .EmailOptinForm .Form--Input::placeholder {
