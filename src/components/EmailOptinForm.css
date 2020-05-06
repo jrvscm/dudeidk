@@ -166,6 +166,12 @@
   height: 3.1rem;
 }
 
+@media screen and (max-width: 500px) {
+  .EmailOptinForm {
+    width: unset;
+  }
+}
+
 
 
 
