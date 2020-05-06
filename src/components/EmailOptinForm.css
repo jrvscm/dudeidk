@@ -151,6 +151,10 @@
   width: 100%;
   text-align: center;
   padding: 2rem;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  left: 0;
 }
 
 .EmailOptinForm .Form--Input-honey {
@@ -168,7 +172,19 @@
 
 @media screen and (max-width: 500px) {
   .EmailOptinForm {
-    width: unset;
+    width: 100%;
+    padding: 0 1rem;
+    flex-direction: column;
+  }
+  .EmailOptinForm .Form--SubmitButton {
+    width: 100%;
+    border-radius: var(--borderRadius);
+  }
+
+
+  .EmailOptinForm .Form--Input {
+    border: 1px solid #fff;
+    border-radius: var(--borderRadius);
   }
 }
 
