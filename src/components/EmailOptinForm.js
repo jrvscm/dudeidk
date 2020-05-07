@@ -87,10 +87,10 @@ class EmailOptinForm extends React.Component {
             value="Sign Up"
             disabled={this.state.disabled}
           />
-          {this.state.alert && (
-            <div className="Form--Alert">{this.state.alert}</div>
-          )}
         </form>
+        {this.state.alert && (
+          <div className="Form--Alert">{this.state.alert}</div>
+        )}
       </Fragment>
     )
   }

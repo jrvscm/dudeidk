@@ -139,13 +139,11 @@
   color: transparent;
 }
 
-.EmailOptinForm .Form--Alert {
+.Construction .Form--Alert {
   background: transparent;
   width: 100%;
   text-align: center;
   padding: 2rem;
-  position: absolute;
-  bottom: -1em;
   left: 0;
   text-align: center;
 }
