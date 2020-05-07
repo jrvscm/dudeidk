@@ -1,47 +1,52 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import { graphql } from 'gatsby'
 import { Instagram } from 'react-feather'
+import Helment from 'react-helmet';
 
 // import FullPageImage from '../components/FullPageImage'
-import svgLogo from '../../static/images/dudeidklogo.svg'
+import svgLogo from '../../static/images/dudeidklogo-title.png'
 import EmailOptinForm from '../components/EmailOptinForm'
 import './ConstructionPage.css'
 
 // Export Template for use in CMS previews
 
 export const ConstructionPageTemplate = () => (
-  <main className="Construction">
+  <Fragment>
     
-    <a href="https://www.instagram.com/dude1dk/" className='social-link'>
-      <Instagram size={36} />
-    </a>
+    <Helment>
+      <link href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700|Raleway:100,300,400,500,600,700&display=swap" rel="stylesheet"></link>
+    </Helment>
+    
+    <main className="Construction">
 
-    <div className="gradient">
-      <div className="inner-col">
-        <img src={svgLogo} />
+      <div className="gradient">
+        <div className="inner-col">
+          <img src={svgLogo} alt="Dude idk smiley face logo"/>
+          <h1>Coming Soon</h1>
+          <hr />
+          <p>Creative Digital Marketing</p>
+          <hr />
+          <a href="https://www.instagram.com/dude1dk/" className='social-link'>
+            <Instagram size={36} />
+          </a>
+          <h2>Interested? Get Notified!</h2>
+          <EmailOptinForm />
+        </div>
       </div>
-      <div className="inner-col">
-        <h1>Coming Soon</h1>
-        <hr />
-        <p>Creative Digital Marketing</p>
-        <hr />
-        <h2>Get notified when we go live</h2>
-        <EmailOptinForm />
-      </div>
-    </div>
 
-    <video 
-      id="video"
-      src="https://ucarecdn.com/89220c18-2635-4c99-b487-2c836a14edc0/video.mp4" 
-      className="video-background" 
-      no-controls="true"
-      autoPlay
-      muted
-      loop
-      type="video/mp4">
-    </video>
+      <video 
+        id="video"
+        src="https://ucarecdn.com/89220c18-2635-4c99-b487-2c836a14edc0/video.mp4" 
+        className="video-background" 
+        no-controls="true"
+        autoPlay
+        muted
+        loop
+        type="video/mp4">
+      </video>
 
-  </main>
+    </main>
+  </Fragment>
 )
 
 // Export Default Construction for front-end
