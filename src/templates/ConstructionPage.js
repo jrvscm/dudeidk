@@ -8,7 +8,6 @@ import Meta from '../components/Meta.js'
 import './ConstructionPage.css'
 
 // Export Template for use in CMS previews
-
 export const ConstructionPageTemplate = ({title, subtitle, description, shareimg}) => (
   <Fragment>
     
@@ -17,7 +16,7 @@ export const ConstructionPageTemplate = ({title, subtitle, description, shareimg
       siteTitle={title}
       description={description}
       absoluteImageUrl={shareimg} 
-      googleTrackingId={process.env != 'production' ? 'UA-165952031-2' : 'UA-165952031-1'}
+      googleTrackingId={process.env.NODE_ENV != 'production' ? 'UA-165952031-2' : 'UA-165952031-1'}
     />
 
     <main className="Construction">
