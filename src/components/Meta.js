@@ -31,7 +31,7 @@ export default class Meta extends Component {
       googleTrackingId
       // overwrite { title, description } if in fields or fields.meta
     } = this.props
-
+    console.log(this.props)
     return (
       <Helmet>
         {title && <title>{title}</title>}
@@ -59,7 +59,7 @@ export default class Meta extends Component {
         <meta property="og:image:secure_url" content={absoluteImageUrl} />
         <meta property="og:image" content={absoluteImageUrl} />
         <meta name="twitter:card" content={absoluteImageUrl} />
-
+        <link href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700|Raleway:100,300,400,500,600,700&display=swap" rel="stylesheet"></link>
         {googleTrackingId && (
           <script
             async

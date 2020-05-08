@@ -1,23 +1,25 @@
 import React, { Fragment } from 'react'
 import { graphql } from 'gatsby'
 import { Instagram } from 'react-feather'
-import Helment from 'react-helmet';
 
 // import FullPageImage from '../components/FullPageImage'
 import svgLogo from '../../static/images/dudeidklogo.svg'
 import EmailOptinForm from '../components/EmailOptinForm'
+import Meta from '../components/Meta.js'
 import './ConstructionPage.css'
 
 // Export Template for use in CMS previews
 
-export const ConstructionPageTemplate = () => (
+export const ConstructionPageTemplate = ({title, subtitle, description, shareimg}) => (
   <Fragment>
     
-    <Helment>
-      <title>Dude Idk | Coming Soon</title>
-      <link href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700|Raleway:100,300,400,500,600,700&display=swap" rel="stylesheet"></link>
-    </Helment>
-    
+    <Meta 
+      title={title +' | '+ subtitle}
+      siteTitle={title}
+      description={description}
+      absoluteImageUrl={shareimg} 
+    />
+
     <main className="Construction">
 
       <div className="gradient">
@@ -59,6 +61,8 @@ export const pageQuery = graphql`
         title
         subtitle
         featuredImage
+        description
+        shareimg
       }
     }
   }
