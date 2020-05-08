@@ -31,7 +31,6 @@ export default class Meta extends Component {
       googleTrackingId
       // overwrite { title, description } if in fields or fields.meta
     } = this.props
-    console.log(this.props)
     return (
       <Helmet>
         {title && <title>{title}</title>}

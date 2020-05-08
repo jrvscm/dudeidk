@@ -2,7 +2,6 @@ import React, { Fragment } from 'react'
 import { graphql } from 'gatsby'
 import { Instagram } from 'react-feather'
 
-// import FullPageImage from '../components/FullPageImage'
 import svgLogo from '../../static/images/dudeidklogo.svg'
 import EmailOptinForm from '../components/EmailOptinForm'
 import Meta from '../components/Meta.js'
@@ -18,6 +17,7 @@ export const ConstructionPageTemplate = ({title, subtitle, description, shareimg
       siteTitle={title}
       description={description}
       absoluteImageUrl={shareimg} 
+      googleTrackingId={process.env != 'production' ? 'UA-164594927-3' : 'UA-164594927-2'}
     />
 
     <main className="Construction">
