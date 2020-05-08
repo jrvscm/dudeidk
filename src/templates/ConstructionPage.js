@@ -17,7 +17,7 @@ export const ConstructionPageTemplate = ({title, subtitle, description, shareimg
       siteTitle={title}
       description={description}
       absoluteImageUrl={shareimg} 
-      googleTrackingId={process.env != 'production' ? 'UA-164594927-3' : 'UA-164594927-2'}
+      googleTrackingId={process.env != 'production' ? 'UA-165952031-2' : 'UA-165952031-1'}
     />
 
     <main className="Construction">
