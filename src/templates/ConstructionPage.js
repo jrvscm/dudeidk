@@ -14,6 +14,7 @@ export const ConstructionPageTemplate = () => (
   <Fragment>
     
     <Helment>
+      <title>Dude Idk | Coming Soon</title>
       <link href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700|Raleway:100,300,400,500,600,700&display=swap" rel="stylesheet"></link>
     </Helment>
     
