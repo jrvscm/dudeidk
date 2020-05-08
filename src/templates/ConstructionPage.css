@@ -89,7 +89,8 @@
 
 .gradient img {
   height: auto;
-  width: 350px;
+  width: 370px;
+  margin-bottom: -5rem;
 }
 
 #video {
@@ -125,6 +126,7 @@
 
   .gradient img {
     width: 250px;
+    margin-bottom: -4rem;
   }
   
   #video {

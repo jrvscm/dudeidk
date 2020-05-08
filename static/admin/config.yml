@@ -243,24 +243,24 @@ collections: # A list of collections the CMS should be able to edit
 
 
       - file: 'content/pages/constuction.md'
-      label: 'Construction Page'
-      name: 'construction-page'
-      fields:
-        - {
-            label: Template,
-            name: template,
-            widget: hidden,
-            default: ConstructionPage,
-          }
-        - { label: Slug, name: slug, widget: hidden, default: '' }
-        - { label: Title, name: title, widget: string }
-        - { label: Featured Image, name: featuredImage, widget: image }
-        - { label: Subtitle, name: subtitle, widget: markdown, required: false }
-        - { label: Body, name: body, widget: markdown }
-        - label: 'Accordion'
-          name: 'accordion'
-          widget: 'list'
-          required: false
+        label: 'Construction Page'
+        name: 'construction-page'
+        fields:
+          - {
+              label: Template,
+              name: template,
+              widget: hidden,
+              default: ConstructionPage,
+            }
+          - { label: Slug, name: slug, widget: hidden, default: '' }
+          - { label: Title, name: title, widget: string }
+          - { label: Featured Image, name: featuredImage, widget: image }
+          - { label: Subtitle, name: subtitle, widget: markdown, required: false }
+          - { label: Body, name: body, widget: markdown }
+          - label: 'Accordion'
+            name: 'accordion'
+            widget: 'list'
+            required: false
             fields:
               - { label: 'Title', name: 'title', widget: 'string' }
               - { label: Content, name: content, widget: text }

@@ -4,7 +4,7 @@ import { Instagram } from 'react-feather'
 import Helment from 'react-helmet';
 
 // import FullPageImage from '../components/FullPageImage'
-import svgLogo from '../../static/images/dudeidklogo-title.png'
+import svgLogo from '../../static/images/dudeidklogo.svg'
 import EmailOptinForm from '../components/EmailOptinForm'
 import './ConstructionPage.css'
 
@@ -33,17 +33,6 @@ export const ConstructionPageTemplate = () => (
           <EmailOptinForm />
         </div>
       </div>
-
-      <video 
-        id="video"
-        src="https://ucarecdn.com/89220c18-2635-4c99-b487-2c836a14edc0/video.mp4" 
-        className="video-background" 
-        no-controls="true"
-        autoPlay
-        muted
-        loop
-        type="video/mp4">
-      </video>
 
     </main>
   </Fragment>
