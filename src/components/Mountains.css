@@ -1,0 +1,48 @@
+.Mountains-Container {
+  background: url('../../static/images/mtns-layer.svg') bottom no-repeat;
+  background-size: cover;
+  min-height: 500px;
+  position: relative;
+  margin-top: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.City-Layer-1 img {
+  width: 66%;
+}
+.City-Layer-2 img {
+  width: 88%;
+}
+.City-Layer-3 img {
+  width: 80%;
+}
+.City-Layer-4 img {
+  width: 100%;
+}
+
+.City-Layer-1 img,
+.City-Layer-2 img,
+.City-Layer-3 img,
+.City-Layer-4 img {
+  --x: 0px;
+  --y: 0px;
+  transform: translate(var(--x), var(--y));
+  transition: background-position 0.25s;
+  position: absolute;
+  background-size: contain;
+  left: 0;
+  right: 0;
+  bottom: -2px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.City-Layer-1 img.no-more-slidey,
+.City-Layer-2 img.no-more-slidey,
+.City-Layer-3 img.no-more-slidey,
+.City-Layer-4 img.no-more-slidey {
+  transition: none;
+}
