@@ -1,0 +1,82 @@
+.Home {
+  padding-top: 150px;
+  background: var(--blue);
+}
+
+.Home .section {
+  border: none;
+  background: var(--blue);
+  padding: 150px 0;
+}
+
+.Home .section .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.Home .section .container h2,
+.Home .section .container h3 {
+  font-family: 'Lobster', cursive;
+  color: #fff;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  text-shadow: 2px 2px 2px var(--secondary);
+}
+
+.Home .section .container h2 {
+  font-size: 84px;
+  line-height: 1;
+  margin-bottom: 3rem;
+}
+.Home .section .container h3 {
+  margin: 0;
+  font-size: 42px;
+  width: 306px;
+}
+
+.Home .section .container .signature {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.Home .section .container .signature p {
+  font-family: 'Quicksand', sans-serif !important;
+  color: var(--primary);
+  font-weight: 500;
+  margin: 0 1rem;
+}
+
+.Home .section .container .signature hr {
+  width: 50px;
+  border: .5px solid var(--primary);
+}
+
+.Home .section .container .quote,
+.Home .section .container .about-one,
+.Home .section .container .about-two {
+  font-weight: lighter;
+  color: #fff;
+  font-family: 'Quicksand', sans-serif;
+  text-align: center;
+  font-size: 28px;
+  display: inline-block;
+  max-width: 900px;
+}
+
+.Home .section .container .about-one {
+  margin-top: 50px;
+}
+
+.Home .section .container .about-two {
+  margin-bottom: 50px;
+}
+
+.Home .section .container .quote {
+  color: var(--primary);
+}

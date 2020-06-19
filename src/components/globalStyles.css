@@ -1,6 +1,8 @@
 :root {
-  --primary: #00c2bd;
+  --primary: #21f5de;
   --secondary: #000;
+  --blue: #0021a3;
+  --lightPurp: #c2ceff;
   --lightGrey: whitesmoke;
   --midGrey: #cacaca;
   --darkGrey: #272727;
@@ -30,8 +32,7 @@ html {
   box-sizing: border-box;
   font-size: 62.5%;
   min-height: 100%;
-  /* background: var(--lightGrey); */
-  background: #0021a3;
+  background: var(--lightGrey);
 }
 
 body {

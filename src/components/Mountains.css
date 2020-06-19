@@ -10,6 +10,12 @@
   justify-content: flex-end;
 }
 
+.Mountains-Container:nth-of-type(2) {
+  background: var(--lightPurp);
+  margin-top: 0px;
+  transform: rotate(180deg);
+}
+
 .City-Layer-1 img {
   width: 66%;
 }
@@ -21,6 +27,7 @@
 }
 .City-Layer-4 img {
   width: 98%;
+  margin-bottom: -5px;
 }
 
 .City-Layer-1 img,
@@ -35,7 +42,7 @@
   background-size: contain;
   left: 0;
   right: 0;
-  bottom: -5px;
+  bottom: 0px;
   margin-left: auto;
   margin-right: auto;
 }

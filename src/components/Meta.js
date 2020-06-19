@@ -58,11 +58,11 @@ export default class Meta extends Component {
         <meta property="og:image:secure_url" content={absoluteImageUrl} />
         <meta property="og:image" content={absoluteImageUrl} />
         <meta name="twitter:card" content={absoluteImageUrl} />
-        <link href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700|Raleway:100,300,400,500,600,700&display=swap" rel="stylesheet"></link>
+        <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Quicksand:wght@300;400;500;600;700&family=Raleway&display=swap" rel="stylesheet" />
         {googleTrackingId && (
           <script
             async
-            src={`https://www.googletagmanager.com/gtag/js?id=${googleTrackingId}`}
+          src={`https://www.googletagmanager.com/gtag/js?id=${googleTrackingId}`}
           />
         )}
 
