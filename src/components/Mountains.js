@@ -7,17 +7,19 @@ import './Mountains.css'
 
 export default class Mountains extends Component { 
   componentDidMount() {
-    const container = document.querySelector('.Mountains-Container');
-    container.addEventListener("mousemove", (e) => {
-      document.querySelector('.City-Layer-1 img').style.setProperty('--x', -e.offsetX * .04 + "px");
-      document.querySelector('.City-Layer-1 img').style.setProperty('--y', -e.offsetY * .04 + "px");
-      document.querySelector('.City-Layer-2 img').style.setProperty('--x', -e.offsetX * .03 + "px");
-      document.querySelector('.City-Layer-2 img').style.setProperty('--y', -e.offsetY * .03 + "px");
-      document.querySelector('.City-Layer-3 img').style.setProperty('--x', -e.offsetX * .02 + "px");
-      document.querySelector('.City-Layer-3 img').style.setProperty('--y', -e.offsetY * .02 + "px");
-      document.querySelector('.City-Layer-4 img').style.setProperty('--x', -e.offsetX * .0 + "px");
-      document.querySelector('.City-Layer-4 img').style.setProperty('--y', -e.offsetY * .0 + "px");
-    });
+    if(window.innerWidth > 600) {
+      const container = document.querySelector('.Mountains-Container');
+      container.addEventListener("mousemove", (e) => {
+        document.querySelector('.City-Layer-1 img').style.setProperty('--x', -e.offsetX * .05 + "px");
+        document.querySelector('.City-Layer-1 img').style.setProperty('--y', -e.offsetY * .05 + "px");
+        document.querySelector('.City-Layer-2 img').style.setProperty('--x', -e.offsetX * .04 + "px");
+        document.querySelector('.City-Layer-2 img').style.setProperty('--y', -e.offsetY * .04 + "px");
+        document.querySelector('.City-Layer-3 img').style.setProperty('--x', -e.offsetX * .03 + "px");
+        document.querySelector('.City-Layer-3 img').style.setProperty('--y', -e.offsetY * .03 + "px");
+        document.querySelector('.City-Layer-4 img').style.setProperty('--x', -e.offsetX * .0 + "px");
+        document.querySelector('.City-Layer-4 img').style.setProperty('--y', -e.offsetY * .0 + "px");
+      });
+    }
   }
 
   render() {

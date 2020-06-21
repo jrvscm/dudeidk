@@ -4,7 +4,6 @@ import { StaticQuery, graphql } from 'gatsby'
 import Meta from './Meta'
 import Nav from './Nav'
 import Footer from './Footer'
-import GithubCorner from './GithubCorner'
 
 import 'modern-normalize/modern-normalize.css'
 import './globalStyles.css'
@@ -59,6 +58,8 @@ export default ({ children, meta, title }) => {
               {title}
               <link href="https://ucarecdn.com" rel="preconnect" crossorigin />
               <link rel="dns-prefetch" href="https://ucarecdn.com" />
+              <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Quicksand:wght@300;400;500;600;700&family=Raleway&display=swap" rel="stylesheet" />
+              <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css" type="text/css"/>
               {/* Add font link tags here */}
             </Helmet>
 
@@ -72,8 +73,6 @@ export default ({ children, meta, title }) => {
               {...meta}
               {...data.settingsYaml}
             />
-
-            <GithubCorner url="https://github.com/jrvscm/dudeidk" />
 
             <Nav subNav={subNav} />
 

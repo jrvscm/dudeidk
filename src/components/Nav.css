@@ -1,15 +1,22 @@
 .Nav {
-  background: white;
-  position: sticky;
-  top: 0;
+  background: var(--blue);
+  color: #fff;
   z-index: 2;
-  border-bottom: 1px solid var(--lightGrey);
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.025);
+}
+
+@media screen and (max-width: 600px) {
+  .Nav {
+    position: sticky;
+    top: 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.025);
+    color: #000;
+  }
 }
 
 .Nav--Container {
   display: flex;
   align-items: center;
+  justify-content: center;
   height: 6rem;
 }
 
@@ -25,7 +32,7 @@
 }
 
 .Nav .Logo {
-  margin-right: 3rem;
+  /* margin-right: 3rem; */
   position: relative;
 }
 
@@ -42,6 +49,9 @@
   text-decoration: none;
   border-bottom: 2px solid;
   border-bottom-color: transparent;
+  font-size: 22px;
+  color: #fff;
+  font-family: 'Quicksand', sans-serif;
 }
 
 .NavLink:hover,
@@ -112,6 +122,10 @@
     display: block !important;
     margin-left: auto;
     z-index: 1;
+    color: #fff;
+  }
+  .Nav.Nav-active .Nav--Container .Nav--MenuButton {
+    color: #000;
   }
   .Nav .Logo {
     z-index: 1;

@@ -1,19 +1,20 @@
 .Mountains-Container {
   background: url('../../static/images/mtns-layer.svg') bottom no-repeat;
-  background-size: cover;
-  min-height: 500px;
+  background-size: contain;
   position: relative;
-  margin-top: 150px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-end;
+  width: auto;
+  min-height: 30vw;
 }
 
 .Mountains-Container:nth-of-type(2) {
   background: var(--lightPurp);
   margin-top: 0px;
   transform: rotate(180deg);
+  min-height: 20vw;
 }
 
 .City-Layer-1 img {
@@ -37,7 +38,7 @@
   --x: 0px;
   --y: 0px;
   transform: translate(var(--x), var(--y));
-  transition: background-position 0.25s;
+  transition: all 0.15s;
   position: absolute;
   background-size: contain;
   left: 0;

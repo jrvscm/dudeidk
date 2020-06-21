@@ -3,10 +3,16 @@
   background: var(--blue);
 }
 
+@media screen and (max-width: 600px) {
+  .Home {
+    padding-top: 0;
+  }
+}
+
 .Home .section {
   border: none;
   background: var(--blue);
-  padding: 150px 0;
+  /* padding: 150px 0; */
 }
 
 .Home .section .container {
@@ -64,9 +70,17 @@
   color: #fff;
   font-family: 'Quicksand', sans-serif;
   text-align: center;
-  font-size: 28px;
+  font-size: 22px;
   display: inline-block;
   max-width: 900px;
+}
+
+@media screen and (max-width: 600px) {
+  .Home .section .container .quote,
+  .Home .section .container .about-one,
+  .Home .section .container .about-two {
+    font-size: 16px;
+  }
 }
 
 .Home .section .container .about-one {
