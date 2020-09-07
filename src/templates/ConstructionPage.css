@@ -1,4 +1,5 @@
-.Construction {}
+.Construction {
+}
 
 .social-link {
   color: #fff;
@@ -14,7 +15,7 @@
 }
 
 .social-link:hover {
-  opacity: .5;
+  opacity: 0.5;
 }
 
 .gradient {
@@ -26,12 +27,8 @@
   z-index: 10;
   width: 100%;
   height: 100%;
-  background-image: 
-    url('https://ucarecdn.com/2adef043-07ce-47c4-86af-bde0b113a71f/desktopbg.png'),   
-    linear-gradient(to bottom,
-    rgba(255, 255, 0, .9),
-    rgba(0,0,0,.9)
-    );
+  background-image: url('../../static/images/desktopbg.png'),
+    linear-gradient(to bottom, rgba(255, 255, 0, 0.9), rgba(0, 0, 0, 0.9));
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -57,7 +54,6 @@
   flex-direction: column;
   overflow: auto;
   padding: 2em 0;
-
 }
 
 .gradient .inner-col h1 {
@@ -73,17 +69,17 @@
   font-size: 2em;
   font-weight: 300;
   letter-spacing: -1px;
-  margin: 1rem 0 0  !important;
+  margin: 1rem 0 0 !important;
 }
 .gradient .inner-col p {
   font-family: 'Raleway', sans-serif;
   font-size: 1.1em;
   font-weight: 300;
-  margin: .5em 0;
+  margin: 0.5em 0;
 }
 
 .gradient .inner-col hr {
-  margin: .5em auto;
+  margin: 0.5em auto;
   width: 150px;
 }
 
@@ -104,17 +100,13 @@
 
 @media screen and (max-width: 500px) {
   .gradient {
-    background-image: 
-      url('https://ucarecdn.com/13ad0747-c470-4424-8dcc-d58c6ac261c7/mobbg.png'),   
-      linear-gradient(to bottom,
-      rgba(255, 255, 0, .9),
-      rgba(0,0,0,.9)
-    );
+    background-image: url('../../static/images/mobbg.png'),
+      linear-gradient(to bottom, rgba(255, 255, 0, 0.9), rgba(0, 0, 0, 0.9));
   }
   .gradient .inner-col h1 {
     font-size: 3em;
   }
-  
+
   .gradient .inner-col h2 {
     font-size: 1.4em;
     letter-spacing: unset;
@@ -128,16 +120,14 @@
     width: 250px;
     margin-bottom: -4rem;
   }
-  
+
   #video {
     display: none;
   }
 }
 
-@media only screen and (orientation:landscape)
-  and (max-device-width: 812px) {
-    .gradient .inner-col {
-      height: auto;
-    }
+@media only screen and (orientation: landscape) and (max-device-width: 812px) {
+  .gradient .inner-col {
+    height: auto;
   }
-
+}

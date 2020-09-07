@@ -8,34 +8,34 @@ import Meta from '../components/Meta.js'
 import './ConstructionPage.css'
 
 // Export Template for use in CMS previews
-export const ConstructionPageTemplate = ({title, subtitle, description, shareimg}) => (
+export const ConstructionPageTemplate = ({ title, subtitle, description }) => (
   <Fragment>
-    
-    <Meta 
-      title={title +' | '+ subtitle}
+    <Meta
+      title={title + ' | ' + subtitle}
       siteTitle={title}
       description={description}
-      absoluteImageUrl={shareimg} 
-      googleTrackingId={process.env.NODE_ENV != 'production' ? 'UA-165952031-2' : 'UA-165952031-1'}
+      googleTrackingId={
+        process.env.NODE_ENV != 'production'
+          ? 'UA-165952031-2'
+          : 'UA-165952031-1'
+      }
     />
 
     <main className="Construction">
-
       <div className="gradient">
         <div className="inner-col">
-          <img src={svgLogo} alt="Dude idk smiley face logo"/>
+          <img src={svgLogo} alt="Dude idk smiley face logo" />
           <h1>Coming Soon</h1>
           <hr />
           <p>Creative Digital Marketing</p>
           <hr />
-          <a href="https://www.instagram.com/dude1dk/" className='social-link'>
+          <a href="https://www.instagram.com/dude1dk/" className="social-link">
             <Instagram size={36} />
           </a>
           <h2>Interested? Get Notified!</h2>
           <EmailOptinForm />
         </div>
       </div>
-
     </main>
   </Fragment>
 )
@@ -61,7 +61,6 @@ export const pageQuery = graphql`
         subtitle
         featuredImage
         description
-        shareimg
       }
     }
   }

@@ -5,26 +5,26 @@ import layerThree from '../../static/images/city-layer-3.svg'
 import layerFour from '../../static/images/city-layer-4.svg'
 import './Mountains.css'
 
-export default class Mountains extends Component { 
+export default class Mountains extends Component {
   componentDidMount() {
-    if(window.innerWidth > 600) {
-      const container = document.querySelector('.Mountains-Container');
-      container.addEventListener("mousemove", (e) => {
-        document.querySelector('.City-Layer-1 img').style.setProperty('--x', -e.offsetX * .05 + "px");
-        document.querySelector('.City-Layer-1 img').style.setProperty('--y', -e.offsetY * .05 + "px");
-        document.querySelector('.City-Layer-2 img').style.setProperty('--x', -e.offsetX * .04 + "px");
-        document.querySelector('.City-Layer-2 img').style.setProperty('--y', -e.offsetY * .04 + "px");
-        document.querySelector('.City-Layer-3 img').style.setProperty('--x', -e.offsetX * .03 + "px");
-        document.querySelector('.City-Layer-3 img').style.setProperty('--y', -e.offsetY * .03 + "px");
-        document.querySelector('.City-Layer-4 img').style.setProperty('--x', -e.offsetX * .0 + "px");
-        document.querySelector('.City-Layer-4 img').style.setProperty('--y', -e.offsetY * .0 + "px");
-      });
+    if (window.innerWidth > 600) {
+      const container = document.querySelector('.Mountains-Container')
+      container.addEventListener('mousemove', e => {
+        console.log('move the mountains')
+        // document.querySelector('.City-Layer-1 img').style.setProperty('--x', -e.offsetX * .05 + "px");
+        // document.querySelector('.City-Layer-1 img').style.setProperty('--y', -e.offsetY * .05 + "px");
+        // document.querySelector('.City-Layer-2 img').style.setProperty('--x', -e.offsetX * .04 + "px");
+        // document.querySelector('.City-Layer-2 img').style.setProperty('--y', -e.offsetY * .04 + "px");
+        // document.querySelector('.City-Layer-3 img').style.setProperty('--x', -e.offsetX * .03 + "px");
+        // document.querySelector('.City-Layer-3 img').style.setProperty('--y', -e.offsetY * .03 + "px");
+        // document.querySelector('.City-Layer-4 img').style.setProperty('--x', -e.offsetX * .0 + "px");
+        // document.querySelector('.City-Layer-4 img').style.setProperty('--y', -e.offsetY * .0 + "px");
+      })
     }
   }
 
   render() {
-    
-    const { className } = this.props;
+    const { className } = this.props
 
     return (
       <div className={`Mountains-Container ${className || ''}`}>
